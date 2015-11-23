@@ -1,0 +1,20 @@
+﻿<ESRI.Configuration xmlns="http://schemas.esri.com/Desktop/AddIns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>mm-fca</Name>
+  <AddInID>{e468ce7c-6a87-44b1-aded-9f24f6e42b28}</AddInID>
+  <Description>Multi-modal FCA Scores</Description>
+  <Version>2.0</Version>
+  <Image>Images\logo-bluename.png</Image>
+  <Author>Mitchel Langford</Author>
+  <Company>University of South Wales</Company>
+  <Date>15-Nov-15</Date>
+  <Targets>
+    <Target name="Desktop" version="10.1" />
+  </Targets>
+  <AddIn language="CLR4.0" library="mm-fca.dll" namespace="mm_fca">
+    <ArcMap>
+      <Commands>
+        <Button id="USW_mm_fca_mmfca" class="mmfca" message="Computes FCA scores using a multi-mode model" caption="mmfca" tip="multi-modal FCA" category="Add-In Controls" image="Images\logo-blue2small.png" />
+      </Commands>
+    </ArcMap>
+  </AddIn>
+</ESRI.Configuration>
